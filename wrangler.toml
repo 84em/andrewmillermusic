@@ -1,0 +1,11 @@
+name = "andrewmillermusic"
+compatibility_date = "2023-05-18"
+
+[env.production]
+name = "andrewmillermusic"
+
+[env.preview]
+name = "andrewmillermusic-preview"
+
+# For Cloudflare Pages
+pages_build_output_dir = "dist"

@@ -10,3 +10,6 @@ name = "andrewmillermusic-preview"
 # For Cloudflare Pages
 pages_build_output_dir = "dist"
 main = "dist/index.html"
+
+[assets]
+directory = "./dist"

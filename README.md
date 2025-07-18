@@ -40,6 +40,7 @@ This project includes a Gulp build system for optimizing CSS, HTML, JavaScript, 
 - `gulp js` - Process JavaScript files only
 - `gulp html` - Process HTML files only
 - `gulp images` - Optimize images only
+- `gulp sitemap` - Generate sitemap.xml file
 
 ## What Each Task Does
 
@@ -63,6 +64,12 @@ This project includes a Gulp build system for optimizing CSS, HTML, JavaScript, 
 - Optimizes images (JPEG, PNG, GIF, SVG)
 - Reduces file sizes without quality loss
 - Outputs to `dist/images/`
+
+### Sitemap Task
+- Generates sitemap.xml for SEO purposes
+- Scans all HTML files in the dist directory
+- Creates XML sitemap with proper URLs and metadata
+- Outputs sitemap.xml to `dist/` directory
 
 ## Development Workflow
 
@@ -127,5 +134,10 @@ The deployment is configured via `wrangler.toml`:
 - Added deployment scripts to package.json (`deploy` and `deploy:preview`)
 - Created `wrangler.toml` configuration file for Cloudflare Pages
 - Updated `.gitignore` to exclude Cloudflare-specific files
+- **Added sitemap.xml generation as part of the Gulp build process**
+  - Integrated `gulp-sitemap` plugin for automatic sitemap generation
+  - Sitemap is generated after HTML processing and included in the main build task
+  - Sitemap automatically updates when HTML files change during development
+  - Configured with proper site URL and SEO metadata
 
-The website functionality remains exactly the same, but now has a professional build process for optimization and maintainability, plus automated deployment to Cloudflare Pages.
+The website functionality remains exactly the same, but now has a professional build process for optimization and maintainability, plus automated deployment to Cloudflare Pages and SEO-friendly sitemap generation.

@@ -71,8 +71,8 @@ async function images() {
     return gulp.src(paths.images.src)
         .pipe(imagemin.default([
             imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({quality: 75, progressive: true}),
-            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.mozjpeg({quality: 95, progressive: true}),
+            imagemin.optipng({optimizationLevel: 1}),
             imagemin.svgo({
                 plugins: [
                     {removeViewBox: true},

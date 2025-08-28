@@ -1,50 +1,179 @@
-html,body {
-    overflow-x:hidden;
-}
-body {
-    font-family: monospace;
-    background-color: #111;
-    color: #fff;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    color: #fff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
-.container {
-    padding: 20px;
-    flex-grow: 1;
+.site-header {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(180deg, #111 0%, #000 100%);
+    border-bottom: 1px solid #333;
+}
+
+.site-header h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.artists-container {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.artist-section {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 3rem;
+    position: relative;
+    transition: background-color 0.3s ease;
 }
 
-h1 {
+.artist-section.subtlerage {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a0a1a 100%);
+}
+
+.artist-section.msfma {
+    background: linear-gradient(135deg, #0a0a0a 0%, #0a1a1a 100%);
+}
+
+.artist-section:hover {
+    background-color: #111;
+}
+
+.artist-content {
+    text-align: center;
+    max-width: 400px;
+}
+
+.artist-name {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
 }
 
-footer {
-    width: 100%;
-    padding: 20px;
-    background-color: #222;
+.artist-description {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
 }
 
-a {
+.artist-link {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid #fff;
     color: #fff;
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
 }
 
-a:hover {
-    text-decoration: underline;
+.artist-link:hover {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-2px);
 }
 
-@media (max-width: 600px) {
-    h1 {
+.divider {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    bottom: 10%;
+    width: 1px;
+    background: linear-gradient(180deg, transparent, #666, transparent);
+    transform: translateX(-50%);
+}
+
+.site-footer {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #111;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.site-footer a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .site-header h1 {
+        font-size: 1.2rem;
+        letter-spacing: 0.3rem;
+    }
+    
+    .artists-container {
+        flex-direction: column;
+    }
+    
+    .artist-section {
+        min-height: 50vh;
+        padding: 2rem;
+    }
+    
+    .artist-name {
         font-size: 2rem;
+    }
+    
+    .artist-description {
+        font-size: 0.9rem;
+    }
+    
+    .divider {
+        display: none;
+    }
+    
+    .artist-section.subtlerage {
+        border-bottom: 1px solid #333;
+    }
+}
+
+@media (max-width: 480px) {
+    .site-header h1 {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    .artist-name {
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    .artist-link {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.8rem;
     }
 }

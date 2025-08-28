@@ -41,7 +41,8 @@ npm run deploy:preview   # Deploy to preview environment
 4. Deploy with `npm run deploy` when ready
 
 ### Important Notes
-- All JavaScript files in `src/js/` concatenate into `dist/js/main.js`
+- CSS files are minified but keep their original names (styles.css → styles.css)
+- All JavaScript files in `src/js/` concatenate into `dist/js/main.min.js`
 - Images in `src/images/` are automatically optimized during build
 - The site uses canonical URLs for SEO (https://andrewmillermusic.com)
 - Footer contains link to 84EM (developer/agency)

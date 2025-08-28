@@ -40,7 +40,6 @@ function clean() {
 function css() {
     return gulp.src(paths.css.src)
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(paths.css.dest));
 }
 

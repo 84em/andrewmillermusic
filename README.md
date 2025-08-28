@@ -1,6 +1,6 @@
 # Andrew Miller Music - Gulp Build Setup
 
-This project includes a Gulp build system for optimizing CSS, HTML, JavaScript, and images, and is configured for deployment to Cloudflare Pages.
+This project is a dual-artist landing page showcasing Subtlerage and MSFMA. It includes a Gulp build system for optimizing CSS, HTML, JavaScript, and images, and is configured for deployment to Cloudflare Pages.
 
 ## Project Structure
 
@@ -46,7 +46,7 @@ This project includes a Gulp build system for optimizing CSS, HTML, JavaScript, 
 
 ### CSS Task
 - Minifies CSS files
-- Adds `.min` suffix to output files
+- Keeps original filenames (no `.min` suffix)
 - Outputs to `dist/css/`
 
 ### JavaScript Task
@@ -127,7 +127,7 @@ The deployment is configured via `wrangler.toml`:
 ## Changes Made
 
 - Extracted inline CSS from `index.html` into separate `src/css/styles.css` file
-- Updated `index.html` to reference external CSS file (`css/styles.min.css`)
+- Updated `index.html` to reference external CSS file (`css/styles.css`)
 - Set up complete Gulp build pipeline with optimization tasks
 - Created proper source/build directory structure
 - Added Cloudflare Pages deployment configuration with Wrangler CLI
@@ -140,4 +140,13 @@ The deployment is configured via `wrangler.toml`:
   - Sitemap automatically updates when HTML files change during development
   - Configured with proper site URL and SEO metadata
 
-The website functionality remains exactly the same, but now has a professional build process for optimization and maintainability, plus automated deployment to Cloudflare Pages and SEO-friendly sitemap generation.
+- **Updated website design to feature dual-artist landing page**
+  - Split-screen layout showcasing Subtlerage and MSFMA
+  - Dark theme with monospace typography
+  - Responsive design (split-screen on desktop, stacked on mobile)
+  - Links to artist websites (subtlerage.com and msfma.com)
+- **Modified CSS build process to maintain original filenames**
+  - CSS files are minified but keep their names (styles.css → styles.css)
+  - Ensures compatibility between development and production environments
+
+The website now features a professional dual-artist landing page with a modern build process for optimization and maintainability, plus automated deployment to Cloudflare Pages and SEO-friendly sitemap generation.

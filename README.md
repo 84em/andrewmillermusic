@@ -1,6 +1,6 @@
 # Andrew Miller Music - Gulp Build Setup
 
-This project is a dual-artist landing page showcasing Subtlerage and MSFMA. It includes a Gulp build system for optimizing CSS, HTML, JavaScript, and images, and is configured for deployment to Cloudflare Pages.
+This project is a three-artist landing page showcasing Subtlerage, MSFMA, and Solo Piano. It includes a Gulp build system for optimizing CSS, HTML, JavaScript, and images, and is configured for deployment to Cloudflare Pages.
 
 ## Project Structure
 
@@ -140,13 +140,13 @@ The deployment is configured via `wrangler.toml`:
   - Sitemap automatically updates when HTML files change during development
   - Configured with proper site URL and SEO metadata
 
-- **Updated website design to feature dual-artist landing page**
-  - Split-screen layout showcasing Subtlerage and MSFMA
+- **Updated website design to feature three-artist landing page**
+  - Tri-panel layout showcasing Subtlerage, MSFMA, and Solo Piano
   - Dark theme with monospace typography
-  - Responsive design (split-screen on desktop, stacked on mobile)
-  - Links to artist websites (subtlerage.com and msfma.com)
+  - Responsive design (three equal panels on desktop, stacked on mobile)
+  - Links to artist websites (subtlerage.com, msfma.com, and andrewmillerpiano.com)
 - **Modified CSS build process to maintain original filenames**
   - CSS files are minified but keep their names (styles.css → styles.css)
   - Ensures compatibility between development and production environments
 
-The website now features a professional dual-artist landing page with a modern build process for optimization and maintainability, plus automated deployment to Cloudflare Pages and SEO-friendly sitemap generation.
+The website now features a professional three-artist landing page with a modern build process for optimization and maintainability, plus automated deployment to Cloudflare Pages and SEO-friendly sitemap generation.

@@ -3,7 +3,7 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
-Static website for Andrew Miller Music, deployed on Cloudflare Pages. Features a dual-artist landing page showcasing Subtlerage and MSFMA with a split-screen design, dark theme, and monospace typography.
+Static website for Andrew Miller Music, deployed on Cloudflare Pages. Features a three-artist landing page showcasing Subtlerage, MSFMA, and Solo Piano with a tri-panel design, dark theme, and monospace typography.
 
 ## Essential Commands
 
@@ -29,8 +29,8 @@ npm run deploy:preview   # Deploy to preview environment
 - SEO: Automatic sitemap.xml generation from HTML files
 
 ### Key Files
-- `src/index.html` - Main HTML (dual-artist landing page for Subtlerage and MSFMA)
-- `src/css/styles.css` - Styles (split-screen layout, dark theme, monospace font)
+- `src/index.html` - Main HTML (three-artist landing page for Subtlerage, MSFMA, and Solo Piano)
+- `src/css/styles.css` - Styles (tri-panel layout, dark theme, monospace font)
 - `gulpfile.js` - All build task definitions
 - `wrangler.toml` - Cloudflare Pages deployment config
 
@@ -50,4 +50,5 @@ npm run deploy:preview   # Deploy to preview environment
 ### Site Content
 - **Subtlerage** (subtlerage.com) - Ambient electronic rock project with introspective soundscapes
 - **MSFMA** (msfma.com) - Instrumental music ranging from piano to ambient to rock
-- Split-screen design on desktop, stacked layout on mobile
+- **Solo Piano** (andrewmillerpiano.com) - Classical and contemporary piano compositions
+- Tri-panel design on desktop (three equal sections), stacked layout on mobile

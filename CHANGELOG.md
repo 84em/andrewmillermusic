@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.1] - 2025-10-23
+
+### Fixed
+- Corrected vertical divider positioning to display both gradient lines between artist sections
+- First divider now properly appears between Subtlerage and MSFMA at 33.33%
+- Second divider now properly appears between MSFMA and Solo Piano at 66.67%
+- Restructured divider placement in DOM to avoid flex layout conflicts
+
 ## [1.5.0] - 2025-10-23
 
 ### Added
@@ -121,7 +129,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic HTML, CSS, and build pipeline structure
 - Cloudflare Pages deployment support
 
-[Unreleased]: https://github.com/84em/andrewmillermusic/compare/v1.5.0...HEAD
+[Unreleased]: https://github.com/84em/andrewmillermusic/compare/v1.5.1...HEAD
+[1.5.1]: https://github.com/84em/andrewmillermusic/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/84em/andrewmillermusic/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/84em/andrewmillermusic/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/84em/andrewmillermusic/compare/v1.2.0...v1.3.0

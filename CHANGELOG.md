@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.0] - 2025-10-23
+
+### Added
+- Staggered slide-in animations for all artist panels on page load
+- Subtlerage panel slides in from left with 0.2s delay
+- MSFMA panel fades and scales from center with 0.5s delay
+- Solo Piano panel slides in from right with 0.8s delay
+- Footer slides up from bottom with 1.1s delay
+- All animations use 1s duration with smooth ease-out timing
+
+### Changed
+- Enhanced visual polish with coordinated entrance animations
+- Improved first impression with sequential panel reveals
+
 ## [1.4.0] - 2025-10-23
 
 ### Added
@@ -107,7 +121,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic HTML, CSS, and build pipeline structure
 - Cloudflare Pages deployment support
 
-[Unreleased]: https://github.com/84em/andrewmillermusic/compare/v1.4.0...HEAD
+[Unreleased]: https://github.com/84em/andrewmillermusic/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/84em/andrewmillermusic/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/84em/andrewmillermusic/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/84em/andrewmillermusic/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/84em/andrewmillermusic/compare/v1.1.0...v1.2.0

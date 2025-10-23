@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.0] - 2025-10-23
+
+### Added
+- Google Fonts integration with Roboto font family (weights 300, 400, 700)
+
+### Changed
+- Replaced monospace Courier New with modern Roboto sans-serif font
+- Optimized font sizes with 20% reduction across all elements for better balance
+- Simplified link text to "Visit →" on all artist sections
+- Improved artist description typography with tighter line-height (1.1) and max-width (480px)
+- Enhanced footer with larger, more readable text (30% increase)
+- Updated footer link styling with brighter color (#ccc) and external link icon (↗)
+- Removed underline from footer development link for cleaner appearance
+- Adjusted mobile breakpoint to 1200px for better responsive behavior
+- Removed forced alignment constraints on artist descriptions for natural flow
+- Increased artist content max-width to 100% to prevent text cutoff at medium screen sizes
+
+### Fixed
+- Content no longer gets cut off at approximately 1100px browser width
+- Artist sections now properly aligned on desktop with consistent spacing
+
 ## [1.3.0] - 2025-10-23
 
 ### Added
@@ -86,7 +107,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic HTML, CSS, and build pipeline structure
 - Cloudflare Pages deployment support
 
-[Unreleased]: https://github.com/84em/andrewmillermusic/compare/v1.3.0...HEAD
+[Unreleased]: https://github.com/84em/andrewmillermusic/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/84em/andrewmillermusic/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/84em/andrewmillermusic/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/84em/andrewmillermusic/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/84em/andrewmillermusic/compare/v1.0.0...v1.1.0

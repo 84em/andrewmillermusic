@@ -40,6 +40,12 @@ npm run deploy:preview   # Deploy to preview environment
 3. Built files appear in `dist/` (do not edit directly)
 4. Deploy with `npm run deploy` when ready
 
+### Release Process
+- **DO NOT run `npm run build` when preparing for release**
+- Cloudflare Pages automatically builds production files via GitHub Actions
+- Simply commit changes and push to trigger automatic deployment
+- The `dist/` folder is built automatically by Cloudflare's build pipeline
+
 ### Important Notes
 - CSS files are minified but keep their original names (styles.css → styles.css)
 - All JavaScript files in `src/js/` concatenate into `dist/js/main.min.js`

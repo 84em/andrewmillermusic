@@ -64,18 +64,23 @@ body {
     padding-top: 10vh;
     position: relative;
     transition: background-color 0.3s ease;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .artist-section.subtlerage {
     background: linear-gradient(135deg, #0a0a0a 0%, #1a0a1a 100%);
+    animation: slideInLeft 1s ease-out 0.2s forwards;
 }
 
 .artist-section.msfma {
     background: linear-gradient(135deg, #0a0a0a 0%, #0a1a1a 100%);
+    animation: fadeScaleIn 1s ease-out 0.5s forwards;
 }
 
 .artist-section.solo-piano {
     background: linear-gradient(135deg, #0a0a0a 0%, #1a1a0a 100%);
+    animation: slideInRight 1s ease-out 0.8s forwards;
 }
 
 .artist-section:hover {
@@ -160,6 +165,8 @@ a:focus {
     background-color: #111;
     text-align: center;
     border-top: 1px solid #333;
+    opacity: 0;
+    animation: slideInUp 1s ease-out 1.1s forwards;
 }
 
 .site-footer .copyright {
@@ -203,5 +210,50 @@ a:focus {
 @media (max-width: 480px) {
     .artist-link {
         padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Animations */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeScaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

@@ -17,6 +17,22 @@ body {
     flex-direction: column;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #fff;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    z-index: 100;
+    border: 2px solid #000;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
 .site-header {
     width: 100%;
     padding: 2rem;
@@ -26,7 +42,7 @@ body {
 }
 
 .site-header h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     letter-spacing: 0.5rem;
     font-weight: 300;
     color: #fff;
@@ -71,15 +87,15 @@ body {
 }
 
 .artist-name {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     letter-spacing: 0.3rem;
     margin-bottom: 1.5rem;
     font-weight: 700;
 }
 
 .artist-description {
-    font-size: 1rem;
-    color: #aaa;
+    font-size: 1.35rem;
+    color: #fff;
     margin-bottom: 2rem;
     line-height: 1.6;
     letter-spacing: 0.05rem;
@@ -93,7 +109,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     transition: all 0.3s ease;
 }
 
@@ -101,6 +117,16 @@ body {
     background-color: #fff;
     color: #000;
     transform: translateY(-2px);
+}
+
+.artist-link:focus {
+    outline: 3px solid #fff;
+    outline-offset: 4px;
+}
+
+a:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
 }
 
 .divider {
@@ -121,21 +147,28 @@ body {
 
 .site-footer {
     width: 100%;
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
     background-color: #111;
     text-align: center;
     border-top: 1px solid #333;
 }
 
-.site-footer a {
-    color: #666;
-    text-decoration: none;
-    font-size: 0.9rem;
-    letter-spacing: 0.1rem;
+.site-footer .copyright {
+    color: #fff;
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 0.75rem;
+}
+
+.site-footer .dev-link {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
     transition: color 0.3s ease;
 }
 
-.site-footer a:hover {
+.site-footer .dev-link:hover {
     color: #fff;
 }
 

@@ -4,54 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000000">
     <link rel="canonical" href="https://andrewmillermusic.com"/>
-    <title>Andrew Miller Music</title>
+    <title>Andrew Miller Music - Subtlerage, MSFMA, and Solo Piano</title>
     <meta name="description" content="Andrew Miller Music - Home of Subtlerage, MSFMA, and Solo Piano">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="site-header">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="site-header" role="banner">
         <h1>ANDREW MILLER MUSIC</h1>
     </header>
     
-    <main class="artists-container">
+    <main id="main-content" class="artists-container" role="main">
         <div class="artist-section subtlerage">
             <div class="artist-content">
                 <h2 class="artist-name">SUBTLERAGE</h2>
                 <p class="artist-description">Ambient electronic rock with introspective soundscapes</p>
-                <a href="https://subtlerage.com" class="artist-link" target="_blank" rel="noopener">
+                <a href="https://subtlerage.com" class="artist-link" target="_blank" rel="noopener" aria-label="Visit Subtlerage website (opens in new tab)">
                     Visit Subtlerage →
                 </a>
             </div>
         </div>
-        
-        <div class="divider"></div>
-        
+
+        <div class="divider" role="presentation" aria-hidden="true"></div>
+
         <div class="artist-section msfma">
             <div class="artist-content">
                 <h2 class="artist-name">MSFMA</h2>
                 <p class="artist-description">Instrumental music from piano to ambient to rock</p>
-                <a href="https://msfma.com" class="artist-link" target="_blank" rel="noopener">
+                <a href="https://msfma.com" class="artist-link" target="_blank" rel="noopener" aria-label="Visit MSFMA website (opens in new tab)">
                     Visit MSFMA →
                 </a>
             </div>
         </div>
-        
-        <div class="divider"></div>
-        
+
+        <div class="divider" role="presentation" aria-hidden="true"></div>
+
         <div class="artist-section solo-piano">
             <div class="artist-content">
                 <h2 class="artist-name">SOLO PIANO</h2>
                 <p class="artist-description">Classical and contemporary piano compositions</p>
-                <a href="https://andrewmillerpiano.com" class="artist-link" target="_blank" rel="noopener">
+                <a href="https://andrewmillerpiano.com" class="artist-link" target="_blank" rel="noopener" aria-label="Visit Solo Piano website (opens in new tab)">
                     Visit Solo Piano →
                 </a>
             </div>
         </div>
     </main>
     
-    <footer class="site-footer">
-        <a href="https://84em.com">84EM</a>
+    <footer class="site-footer" role="contentinfo">
+        <p class="copyright">Copyright 1973-<span id="current-year">2025</span> Andrew Jonathon Miller</p>
+        <a href="https://84em.com" class="dev-link" aria-label="Custom Website Development by 84EM (opens in new tab)" target="_blank" rel="noopener">Custom Website Development by 84EM</a>
     </footer>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
